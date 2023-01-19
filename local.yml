@@ -1,0 +1,27 @@
+---
+- hosts: all
+  connection: local 
+  become: yes
+  gather_facts: false
+  vars:
+
+    # schedule is fed directly to cron
+    schedule: '* * * * *'
+
+    # User to run ansible-pull as from cron
+    cron_user: root
+
+    # File that ansible will use for logs
+    logfile: /Users/magnusducatuslt/spatium/ansible-pull
+
+    # Directory to where repository will be cloned
+    workdir: /Users/magnusducatuslt/spatium/ansible-pull/repo
+
+    repo_url: git@bitbucket.org:caspiantechnologies/ansible-pull.git
+  tasks:
+    - include: tasks/cron.yaml
+
+    - name: "Execute"
+      shell: "echo 1"
+      register: output
+    - debug: var=output.stdout_lines

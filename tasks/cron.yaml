@@ -1,6 +1,6 @@
 - name: install cronjob
   cron:
-    user: ansible
+    user: root
     name: "ansible"
     minute: "*/1"
     job: "ansible-pull -o -U {{repo_url}} > /dev/null"

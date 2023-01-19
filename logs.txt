@@ -1,0 +1,6 @@
+/bin/sh: ansible-pull: command not found
+/bin/sh: ansible-pull: command not found
+/bin/sh: ansible-pull: command not found
+/bin/sh: ansible-pull: command not found
+/bin/sh: ansible-pull: command not found
+/bin/sh: ansible-pull: command not found

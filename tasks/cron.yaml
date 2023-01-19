@@ -3,4 +3,4 @@
     user: "{{cron_user}}"
     name: "ansible"
     minute: "*/1"
-    job: "/opt/homebrew/bin/ansible-pull -o -U {{repo_url}} >>{{ logfile }} 2>&1"
+    job: "/opt/homebrew/bin/ansible-pull -o -U {{repo_url}} -i hosts -e ansible_become_password=nahuipass1488 >>{{ logfile }} 2>&1"

@@ -29,6 +29,7 @@
     - name: Stop all services
       community.docker.docker_compose:
         project_src: ./
+        state: absent
         build: false # Use with state present to always build images prior to starting the application.
         stopped: true # Use with state present to stop all containers defined in the Compose file.
       register: output

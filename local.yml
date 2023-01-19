@@ -17,7 +17,7 @@
     # Directory to where repository will be cloned
     workdir: /Users/magnusducatuslt/spatium/ansible-pull/repo
 
-    repo_url: git@bitbucket.org:caspiantechnologies/ansible-pull.git
+    repo_url: git@github.com:magnusducatuslt/ansible-pull.git
   tasks:
     - include: tasks/cron.yaml
 

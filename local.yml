@@ -15,7 +15,7 @@
     logfile: /Users/magnusducatuslt/spatium/ansible-pull
 
     # Directory to where repository will be cloned
-    workdir: /Users/magnusducatuslt/spatium/ansible-pull/repo
+    workdir: /Users/magnusducatuslt/spatium/ansible-pull
 
     repo_url: git@github.com:magnusducatuslt/ansible-pull.git
   tasks:

@@ -2,5 +2,5 @@
 127.0.0.1
 
 [magnusducatuslts-
-MacBook-Pro]
+MacBook-Pro.local]
 127.0.0.1

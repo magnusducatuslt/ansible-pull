@@ -1,11 +1,5 @@
-/bin/sh: ansible-pull: command not found
-/bin/sh: ansible-pull: command not found
-/bin/sh: ansible-pull: command not found
-/bin/sh: ansible-pull: command not found
-/bin/sh: ansible-pull: command not found
-/bin/sh: ansible-pull: command not found
-Starting Ansible Pull at 2023-01-19 21:22:05
-/opt/homebrew/bin/ansible-pull -o -U git@github.com:magnusducatuslt/ansible-pull.git
+Starting Ansible Pull at 2023-01-19 21:40:05
+/opt/homebrew/bin/ansible-pull -o -U git@github.com:magnusducatuslt/ansible-pull.git -i hosts -e ansible_become_password=nahuipass1488
 [WARNING]: Could not match supplied host pattern, ignoring: magnusducatuslts-
 MacBook-Pro.local
 [WARNING]: Could not match supplied host pattern, ignoring: magnusducatuslts-
@@ -26,52 +20,8 @@ localhost | FAILED! => {
     "stdout": "",
     "stdout_lines": []
 }
-Starting Ansible Pull at 2023-01-19 21:23:05
-/opt/homebrew/bin/ansible-pull -o -U git@github.com:magnusducatuslt/ansible-pull.git
-[WARNING]: Could not match supplied host pattern, ignoring: magnusducatuslts-
-MacBook-Pro.local
-[WARNING]: Could not match supplied host pattern, ignoring: magnusducatuslts-
-MacBook-Pro
-localhost | FAILED! => {
-    "changed": false,
-    "cmd": "/usr/bin/git ls-remote git@github.com:magnusducatuslt/ansible-pull.git -h refs/heads/HEAD",
-    "msg": "git@github.com: Permission denied (publickey).\r\nfatal: Could not read from remote repository.\n\nPlease make sure you have the correct access rights\nand the repository exists.",
-    "rc": 128,
-    "stderr": "git@github.com: Permission denied (publickey).\r\nfatal: Could not read from remote repository.\n\nPlease make sure you have the correct access rights\nand the repository exists.\n",
-    "stderr_lines": [
-        "git@github.com: Permission denied (publickey).",
-        "fatal: Could not read from remote repository.",
-        "",
-        "Please make sure you have the correct access rights",
-        "and the repository exists."
-    ],
-    "stdout": "",
-    "stdout_lines": []
-}
-Starting Ansible Pull at 2023-01-19 21:24:06
-/opt/homebrew/bin/ansible-pull -o -U git@github.com:magnusducatuslt/ansible-pull.git
-[WARNING]: Could not match supplied host pattern, ignoring: magnusducatuslts-
-MacBook-Pro.local
-[WARNING]: Could not match supplied host pattern, ignoring: magnusducatuslts-
-MacBook-Pro
-localhost | FAILED! => {
-    "changed": false,
-    "cmd": "/usr/bin/git ls-remote git@github.com:magnusducatuslt/ansible-pull.git -h refs/heads/HEAD",
-    "msg": "git@github.com: Permission denied (publickey).\r\nfatal: Could not read from remote repository.\n\nPlease make sure you have the correct access rights\nand the repository exists.",
-    "rc": 128,
-    "stderr": "git@github.com: Permission denied (publickey).\r\nfatal: Could not read from remote repository.\n\nPlease make sure you have the correct access rights\nand the repository exists.\n",
-    "stderr_lines": [
-        "git@github.com: Permission denied (publickey).",
-        "fatal: Could not read from remote repository.",
-        "",
-        "Please make sure you have the correct access rights",
-        "and the repository exists."
-    ],
-    "stdout": "",
-    "stdout_lines": []
-}
-Starting Ansible Pull at 2023-01-19 21:25:05
-/opt/homebrew/bin/ansible-pull -o -U git@github.com:magnusducatuslt/ansible-pull.git
+Starting Ansible Pull at 2023-01-19 21:41:05
+/opt/homebrew/bin/ansible-pull -o -U git@github.com:magnusducatuslt/ansible-pull.git -i hosts -e ansible_become_password=nahuipass1488
 [WARNING]: Could not match supplied host pattern, ignoring: magnusducatuslts-
 MacBook-Pro
 [WARNING]: Could not match supplied host pattern, ignoring: magnusducatuslts-
@@ -92,30 +42,8 @@ localhost | FAILED! => {
     "stdout": "",
     "stdout_lines": []
 }
-Starting Ansible Pull at 2023-01-19 21:26:05
-/opt/homebrew/bin/ansible-pull -o -U git@github.com:magnusducatuslt/ansible-pull.git
-[WARNING]: Could not match supplied host pattern, ignoring: magnusducatuslts-
-MacBook-Pro.local
-[WARNING]: Could not match supplied host pattern, ignoring: magnusducatuslts-
-MacBook-Pro
-localhost | FAILED! => {
-    "changed": false,
-    "cmd": "/usr/bin/git ls-remote git@github.com:magnusducatuslt/ansible-pull.git -h refs/heads/HEAD",
-    "msg": "git@github.com: Permission denied (publickey).\r\nfatal: Could not read from remote repository.\n\nPlease make sure you have the correct access rights\nand the repository exists.",
-    "rc": 128,
-    "stderr": "git@github.com: Permission denied (publickey).\r\nfatal: Could not read from remote repository.\n\nPlease make sure you have the correct access rights\nand the repository exists.\n",
-    "stderr_lines": [
-        "git@github.com: Permission denied (publickey).",
-        "fatal: Could not read from remote repository.",
-        "",
-        "Please make sure you have the correct access rights",
-        "and the repository exists."
-    ],
-    "stdout": "",
-    "stdout_lines": []
-}
-Starting Ansible Pull at 2023-01-19 21:27:05
-/opt/homebrew/bin/ansible-pull -o -U git@github.com:magnusducatuslt/ansible-pull.git
+Starting Ansible Pull at 2023-01-19 21:42:05
+/opt/homebrew/bin/ansible-pull -o -U git@github.com:magnusducatuslt/ansible-pull.git -i hosts -e ansible_become_password=nahuipass1488
 [WARNING]: Could not match supplied host pattern, ignoring: magnusducatuslts-
 MacBook-Pro
 [WARNING]: Could not match supplied host pattern, ignoring: magnusducatuslts-
@@ -136,8 +64,8 @@ localhost | FAILED! => {
     "stdout": "",
     "stdout_lines": []
 }
-Starting Ansible Pull at 2023-01-19 21:28:05
-/opt/homebrew/bin/ansible-pull -o -U git@github.com:magnusducatuslt/ansible-pull.git
+Starting Ansible Pull at 2023-01-19 21:43:06
+/opt/homebrew/bin/ansible-pull -o -U git@github.com:magnusducatuslt/ansible-pull.git -i hosts -e ansible_become_password=nahuipass1488
 [WARNING]: Could not match supplied host pattern, ignoring: magnusducatuslts-
 MacBook-Pro
 [WARNING]: Could not match supplied host pattern, ignoring: magnusducatuslts-
@@ -158,8 +86,30 @@ localhost | FAILED! => {
     "stdout": "",
     "stdout_lines": []
 }
-Starting Ansible Pull at 2023-01-19 21:29:06
-/opt/homebrew/bin/ansible-pull -o -U git@github.com:magnusducatuslt/ansible-pull.git
+Starting Ansible Pull at 2023-01-19 21:44:06
+/opt/homebrew/bin/ansible-pull -o -U git@github.com:magnusducatuslt/ansible-pull.git -i hosts -e ansible_become_password=nahuipass1488
+[WARNING]: Could not match supplied host pattern, ignoring: magnusducatuslts-
+MacBook-Pro
+[WARNING]: Could not match supplied host pattern, ignoring: magnusducatuslts-
+MacBook-Pro.local
+localhost | FAILED! => {
+    "changed": false,
+    "cmd": "/usr/bin/git ls-remote git@github.com:magnusducatuslt/ansible-pull.git -h refs/heads/HEAD",
+    "msg": "git@github.com: Permission denied (publickey).\r\nfatal: Could not read from remote repository.\n\nPlease make sure you have the correct access rights\nand the repository exists.",
+    "rc": 128,
+    "stderr": "git@github.com: Permission denied (publickey).\r\nfatal: Could not read from remote repository.\n\nPlease make sure you have the correct access rights\nand the repository exists.\n",
+    "stderr_lines": [
+        "git@github.com: Permission denied (publickey).",
+        "fatal: Could not read from remote repository.",
+        "",
+        "Please make sure you have the correct access rights",
+        "and the repository exists."
+    ],
+    "stdout": "",
+    "stdout_lines": []
+}
+Starting Ansible Pull at 2023-01-19 21:45:06
+/opt/homebrew/bin/ansible-pull -o -U git@github.com:magnusducatuslt/ansible-pull.git -i hosts -e ansible_become_password=nahuipass1488
 [WARNING]: Could not match supplied host pattern, ignoring: magnusducatuslts-
 MacBook-Pro.local
 [WARNING]: Could not match supplied host pattern, ignoring: magnusducatuslts-

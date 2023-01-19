@@ -20,12 +20,6 @@
     repo_url: git@github.com:magnusducatuslt/ansible-pull.git
   tasks:
     - include_tasks: tasks/cron.yaml
-
-    - name: "Execute"
-      shell: "echo 1"
-      register: output
-    - debug: var=output.stdout_lines
-
     - name: Tear down existing services
       community.docker.docker_compose:
         project_src: "./"
@@ -44,4 +38,7 @@
         build: true # Use with state present to always build images prior to starting the application.
         state: present # Desired state of the project. Specifying present is the same as running docker-compose up resp.
         project_src: ./ # Path to a directory containing a docker-compose.yml or docker-compose.yaml file.
+      register: output
     
+    - ansible.builtin.debug:
+        var: output

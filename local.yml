@@ -12,7 +12,7 @@
     cron_user: root
 
     # File that ansible will use for logs
-    logfile: /Users/magnusducatuslt/spatium/ansible-pull
+    logfile: /Users/magnusducatuslt/spatium/ansible-pull/logs.txt
 
     # Directory to where repository will be cloned
     workdir: /Users/magnusducatuslt/spatium/ansible-pull

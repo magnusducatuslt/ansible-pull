@@ -31,10 +31,8 @@
         project_src: "./"
         state: absent
       register: "output"
-      when: "'{{gitresult.before}}' != '{{gitresult.after}}'"
 
     - name: Create and start services
       community.docker.docker_compose:
         project_src: ./
-      register: output
     

@@ -1,5 +1,5 @@
 ---
-- hosts: local
+- hosts: magnusducatuslts-MacBook-Pro.local
   connection: local 
   gather_facts: false
   vars:

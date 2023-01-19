@@ -29,10 +29,19 @@
     - name: Tear down existing services
       community.docker.docker_compose:
         project_src: "./"
-        state: absent
+        state: absent # Specifying absent is the same as running docker-compose down.
       register: "output"
+
+    - name: Stop all services
+      community.docker.docker_compose:
+        project_src: ./
+        build: false # Use with state present to always build images prior to starting the application.
+        stopped: true # Use with state present to stop all containers defined in the Compose file.
+      register: output
 
     - name: Create and start services
       community.docker.docker_compose:
-        project_src: ./
+        build: true # Use with state present to always build images prior to starting the application.
+        state: present # Desired state of the project. Specifying present is the same as running docker-compose up resp.
+        project_src: ./ # Path to a directory containing a docker-compose.yml or docker-compose.yaml file.
     

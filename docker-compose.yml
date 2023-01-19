@@ -1,7 +1,7 @@
 version: "3"
 services:
   web:
-    image: apache
+    image: apache:latest
     build: ./webapp
     container_name: apache_web
     restart: always

@@ -36,12 +36,6 @@
     #     stopped: true # Use with state present to stop all containers defined in the Compose file.
     #   register: output 
 
-    - name: After
-      shell: "docker ps"
-      register: logs2
-        
-    - debug: var=logs2.stdout_lines
-
     - name: Create and start services
       docker_compose:
         project_src: ./ # Path to a directory containing a docker-compose.yml or docker-compose.yaml file.

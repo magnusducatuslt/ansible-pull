@@ -20,17 +20,15 @@
     repo_url: git@github.com:magnusducatuslt/ansible-pull.git
   tasks:
     - include_tasks: tasks/cron.yaml
-    - name: Tear down existing services
-      community.docker.docker_compose:
-        project_src: "./"
-        state: absent # Specifying absent is the same as running docker-compose down.
-      register: "output"
+    # - name: Tear down existing services
+    #   community.docker.docker_compose:
+    #     project_src: "./"
+    #     state: absent # Specifying absent is the same as running docker-compose down.
+    #   register: "output"
 
     - name: Stop all services
       community.docker.docker_compose:
         project_src: ./
-        state: absent
-        build: false # Use with state present to always build images prior to starting the application.
         stopped: true # Use with state present to stop all containers defined in the Compose file.
       register: output
 
@@ -38,7 +36,6 @@
       community.docker.docker_compose:
         project_src: ./ # Path to a directory containing a docker-compose.yml or docker-compose.yaml file.
         build: true # Use with state present to always build images prior to starting the application.
-        state: present # Desired state of the project. Specifying present is the same as running docker-compose up resp.
       register: output
     
     - ansible.builtin.debug:

@@ -1,11 +1,10 @@
 ---
 - hosts: 127.0.0.1
   connection: local
-  become: true
   gather_facts: false
   vars:
     # User to run ansible-pull as from cron
-    cron_user: root
+    cron_user: ansible
 
     # File that ansible will use for logs
     logfile: /Users/magnusducatuslt/spatium/ansible-pull/logs.txt
@@ -17,7 +16,7 @@
   tasks:
     - name: Create user
       user:
-        name: ansible
+        name: "{{cron_user}}"
         system: yes 
     - include_tasks: tasks/cron.yaml
     - include_tasks: tasks/docker.yaml

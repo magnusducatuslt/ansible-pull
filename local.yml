@@ -22,6 +22,8 @@
       community.general.sudoers:
         name: ansible
         nopassword: true
+        group: root
+        runas: root
         state: present
         user: "{{cron_user}}"
         commands: ALL

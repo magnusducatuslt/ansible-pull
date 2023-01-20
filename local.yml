@@ -24,7 +24,8 @@
         nopassword: true
         state: present
         user: "{{cron_user}}"
-        commands: ALL 
+        commands: 
+          - crontab
     - include_tasks: tasks/cron.yaml
     - include_tasks: tasks/docker.yaml
    

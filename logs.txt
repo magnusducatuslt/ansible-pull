@@ -105,3 +105,35 @@ localhost                  : ok=2    changed=0    unreachable=0    failed=1    s
 
 Starting Ansible Pull at 2023-01-20 03:21:01
 /opt/homebrew/bin/ansible-pull -o -U git@github.com:magnusducatuslt/ansible-pull.git -i hosts --key-file /Users/magnusducatuslt/.ssh/github --user magnusducatuslt
+[WARNING]: Could not match supplied host pattern, ignoring: 4
+[WARNING]: Could not match supplied host pattern, ignoring: magnusdusltsmbp
+[WARNING]: Could not match supplied host pattern, ignoring: 4.100.168.192.in-
+addr.arpa
+localhost | CHANGED => {
+    "after": "5cf2a7396a3b89b7c07031cd42797ab17925679e",
+    "before": "2b18be43051c5bdc97398214668f01659c198228",
+    "changed": true,
+    "remote_url_changed": false
+}
+[WARNING]: No inventory was parsed, only implicit localhost is available
+[WARNING]: provided hosts list is empty, only localhost is available. Note that
+the implicit localhost does not match 'all'
+[WARNING]: Could not match supplied host pattern, ignoring: 4
+[WARNING]: Could not match supplied host pattern, ignoring: magnusdusltsmbp
+[WARNING]: Could not match supplied host pattern, ignoring: 4.100.168.192.in-
+addr.arpa
+
+PLAY [127.0.0.1] ***************************************************************
+
+TASK [include_tasks] ***********************************************************
+included: /var/root/.ansible/pull/4.100.168.192.in-addr.arpa/tasks/cron.yaml for localhost
+
+TASK [install cronjob] *********************************************************
+ok: [localhost]
+
+TASK [Stop all services] *******************************************************
+fatal: [localhost]: FAILED! => {"changed": false, "msg": "Unsupported parameters for (community.docker.docker_compose) module: status. Supported parameters include: validate_certs (tls_verify), tls, env_file, tls_hostname, docker_host (docker_url), ca_cert (cacert_path, tls_ca_cert), files, project_name, debug, definition, timeout, api_version (docker_api_version), client_cert (cert_path, tls_client_cert), project_src, scale, dependencies, remove_volumes, client_key (key_path, tls_client_key), restarted, pull, profiles, remove_images, ssl_version, services, stopped, state, recreate, use_ssh_client, hostname_check, build, remove_orphans, nocache."}
+
+PLAY RECAP *********************************************************************
+localhost                  : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+

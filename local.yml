@@ -33,11 +33,11 @@
     #     stopped: true # Use with state present to stop all containers defined in the Compose file.
     #   register: output
 
-    - name: Create and start services
-      community.docker.docker_compose:
-        project_src: ./ # Path to a directory containing a docker-compose.yml or docker-compose.yaml file.
+    # - name: Create and start services
+      # community.docker.docker_compose:
+        # project_src: ./ # Path to a directory containing a docker-compose.yml or docker-compose.yaml file.
         # build: true # Use with state present to always build images prior to starting the application.
-      register: output
+      # register: output
     
     - ansible.builtin.debug:
         var: output

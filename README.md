@@ -43,7 +43,13 @@ Now code from github doesnt pulled on changes in repo, so u must make changes in
 
 3. push changes to repo
 
-4. wait when container **apache_web** will running or watch logs file, because cronjob write logs.
+4. run command, but replace **PLACE_YOUR_SUDO_PASSWORD**, **PLACE_REPO_URL**
+
+```
+ansible-pull -U PLACE_REPO_URL -i hosts -e ansible_become_password=PLACE_YOUR_SUDO_PASSWORD
+```
+
+5. wait when container **apache_web** will running or watch logs file, because cronjob write logs.
 
 Check
 
@@ -51,4 +57,4 @@ Check
 docker ps | grep apache_web
 ```
 
-5. follow [link](http://localhost:8080/)
+6. follow [link](http://localhost:8080/)

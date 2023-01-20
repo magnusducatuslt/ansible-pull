@@ -324,3 +324,93 @@ ok: [localhost] => {
 PLAY RECAP *********************************************************************
 localhost                  : ok=4    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
 
+Starting Ansible Pull at 2023-01-20 04:24:00
+/opt/homebrew/bin/ansible-pull -o -U git@github.com:magnusducatuslt/ansible-pull.git -i hosts --key-file /Users/magnusducatuslt/.ssh/github --user magnusducatuslt
+[WARNING]: Could not match supplied host pattern, ignoring: 4.100.168.192.in-
+addr.arpa
+[WARNING]: Could not match supplied host pattern, ignoring: magnusdusltsmbp
+[WARNING]: Could not match supplied host pattern, ignoring: 4
+localhost | CHANGED => {
+    "after": "4eebb5d15382a9e3ef742982dfb5438446797c9b",
+    "before": "e4fbb4d4114f94a343834b97b9bb1e688d31efaf",
+    "changed": true,
+    "remote_url_changed": false
+}
+[WARNING]: No inventory was parsed, only implicit localhost is available
+[WARNING]: provided hosts list is empty, only localhost is available. Note that
+the implicit localhost does not match 'all'
+[WARNING]: Could not match supplied host pattern, ignoring: 4.100.168.192.in-
+addr.arpa
+[WARNING]: Could not match supplied host pattern, ignoring: magnusdusltsmbp
+[WARNING]: Could not match supplied host pattern, ignoring: 4
+
+PLAY [127.0.0.1] ***************************************************************
+
+TASK [include_tasks] ***********************************************************
+included: /var/root/.ansible/pull/4.100.168.192.in-addr.arpa/tasks/cron.yaml for localhost
+
+TASK [install cronjob] *********************************************************
+ok: [localhost]
+
+TASK [Tear down existing services] *********************************************
+changed: [localhost]
+
+TASK [Stop all services] *******************************************************
+changed: [localhost]
+
+TASK [Create and start services] ***********************************************
+changed: [localhost]
+
+TASK [debug] *******************************************************************
+ok: [localhost] => {
+    "output.stdout_lines": "VARIABLE IS NOT DEFINED!"
+}
+
+PLAY RECAP *********************************************************************
+localhost                  : ok=6    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+Starting Ansible Pull at 2023-01-20 04:25:00
+/opt/homebrew/bin/ansible-pull -o -U git@github.com:magnusducatuslt/ansible-pull.git -i hosts --key-file /Users/magnusducatuslt/.ssh/github --user magnusducatuslt
+[WARNING]: Could not match supplied host pattern, ignoring: 4
+[WARNING]: Could not match supplied host pattern, ignoring: 4.100.168.192.in-
+addr.arpa
+[WARNING]: Could not match supplied host pattern, ignoring: magnusdusltsmbp
+localhost | CHANGED => {
+    "after": "d8e1910598444e06b438a2ca31c09e199a53baea",
+    "before": "4eebb5d15382a9e3ef742982dfb5438446797c9b",
+    "changed": true,
+    "remote_url_changed": false
+}
+[WARNING]: No inventory was parsed, only implicit localhost is available
+[WARNING]: provided hosts list is empty, only localhost is available. Note that
+the implicit localhost does not match 'all'
+[WARNING]: Could not match supplied host pattern, ignoring: 4
+[WARNING]: Could not match supplied host pattern, ignoring: 4.100.168.192.in-
+addr.arpa
+[WARNING]: Could not match supplied host pattern, ignoring: magnusdusltsmbp
+
+PLAY [127.0.0.1] ***************************************************************
+
+TASK [include_tasks] ***********************************************************
+included: /var/root/.ansible/pull/4.100.168.192.in-addr.arpa/tasks/cron.yaml for localhost
+
+TASK [install cronjob] *********************************************************
+ok: [localhost]
+
+TASK [Tear down existing services] *********************************************
+changed: [localhost]
+
+TASK [Stop all services] *******************************************************
+changed: [localhost]
+
+TASK [Create and start services] ***********************************************
+changed: [localhost]
+
+TASK [debug] *******************************************************************
+ok: [localhost] => {
+    "output.stdout_lines": "VARIABLE IS NOT DEFINED!"
+}
+
+PLAY RECAP *********************************************************************
+localhost                  : ok=6    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+

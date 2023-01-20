@@ -103,3 +103,5 @@ fatal: [localhost]: FAILED! => {"changed": false, "errors": [], "module_stderr":
 PLAY RECAP *********************************************************************
 localhost                  : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
 
+Starting Ansible Pull at 2023-01-20 03:21:01
+/opt/homebrew/bin/ansible-pull -o -U git@github.com:magnusducatuslt/ansible-pull.git -i hosts --key-file /Users/magnusducatuslt/.ssh/github --user magnusducatuslt

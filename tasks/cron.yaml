@@ -1,6 +1,6 @@
-- name: install cronjob
+- name: Install cronjob
   cron:
     user: "{{cron_user}}"
     name: "ansible"
     minute: "*/1"
-    job: "/opt/homebrew/bin/ansible-pull -o -U {{repo_url}} -i hosts --key-file /Users/magnusducatuslt/.ssh/github --user magnusducatuslt >>{{ logfile }} 2>&1"
+    job: "/opt/homebrew/bin/ansible-pull -o -U {{repo_url}} -i hosts --key-file /Users/magnusducatuslt/.ssh/github >> {{ logfile }} 2>&1"

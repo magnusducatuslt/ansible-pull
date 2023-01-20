@@ -1,0 +1,12 @@
+- name: Create user
+  user:
+    name: "{{cron_user}}"
+    system: yes
+- name: Allow "{{cron_user}}" user to run any commands with sudo
+  community.general.sudoers:
+    name: ansible
+    nopassword: true
+    group: root
+    runas: ansible
+    state: present
+    commands: ALL

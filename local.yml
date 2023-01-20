@@ -42,17 +42,11 @@
         
     - debug: var=logs2.stdout_lines
 
-    - name: Handle the error
-      block:
-      - name: Create and start services
-        docker_compose:
-          project_src: ./ # Path to a directory containing a docker-compose.yml or docker-compose.yaml file.
-          build: true # Use with state present to always build images prior to starting the application.
-        register: output
-      rescue:
-      - name: Print when errors
-        debug:
-          var: output.stdout_lines
+    - name: Create and start services
+      docker_compose:
+        project_src: ./ # Path to a directory containing a docker-compose.yml or docker-compose.yaml file.
+        build: true # Use with state present to always build images prior to starting the application.
+      register: output
 
     - debug:
         var: output.stdout_lines

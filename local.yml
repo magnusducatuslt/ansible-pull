@@ -34,8 +34,7 @@
         project_src: ./
         build: false
         stopped: true # Use with state present to stop all containers defined in the Compose file.
-      register: output
-      timeout: 30 
+      register: output 
 
     - name: After
       shell: "docker ps"

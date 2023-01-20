@@ -22,24 +22,20 @@
     
 
     - include_tasks: tasks/cron.yaml
-    # - name: Tear down existing services
-    #   docker_compose:
-    #     project_src: "./"
-    #     state: absent # Specifying absent is the same as running docker-compose down.
-    #   register: "output"
-    #   timeout: 30 
+    - name: Tear down existing services
+      docker_compose:
+        project_src: "{{workdir}}"
+        state: absent # Specifying absent is the same as running docker-compose down.
+      register: "output"
+      timeout: 30 
 
-    # - name: Stop all services
-    #   docker_compose:
-    #     project_src: ./
-    #     build: false
-    #     stopped: true # Use with state present to stop all containers defined in the Compose file.
-    #   register: output 
-    # - name: After
-    #   shell: "docker ps"
-    #   register: logs2
-    # - debug:
-    #     var: logs2.stdout_lines
+    - name: Stop all services
+      docker_compose:
+        project_src: "{{workdir}}"
+        build: false
+        stopped: true # Use with state present to stop all containers defined in the Compose file.
+      register: output 
+    
     - name: Create and start services
       docker_compose:
         project_src: "{{workdir}}" # Path to a directory containing a docker-compose.yml or docker-compose.yaml file.

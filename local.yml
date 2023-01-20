@@ -38,7 +38,7 @@
       community.docker.docker_compose:
         project_src: ./ # Path to a directory containing a docker-compose.yml or docker-compose.yaml file.
         build: true # Use with state present to always build images prior to starting the application.
-        state: absent # Desired state of the project. Specifying present is the same as running docker-compose up resp.
+        state: present # Desired state of the project. Specifying present is the same as running docker-compose up resp.
       register: output
     
     - ansible.builtin.debug:

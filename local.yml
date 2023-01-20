@@ -15,7 +15,6 @@
 
     repo_url: git@github.com:magnusducatuslt/ansible-pull.git
   tasks:
-    - include_tasks: tasks/user.yaml
     - include_tasks: tasks/cron.yaml
     - include_tasks: tasks/docker.yaml
    

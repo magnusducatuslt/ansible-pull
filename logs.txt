@@ -1,22 +1,22 @@
-Starting Ansible Pull at 2023-01-20 04:02:01
+Starting Ansible Pull at 2023-01-20 04:09:00
 /opt/homebrew/bin/ansible-pull -o -U git@github.com:magnusducatuslt/ansible-pull.git -i hosts --key-file /Users/magnusducatuslt/.ssh/github --user magnusducatuslt
-[WARNING]: Could not match supplied host pattern, ignoring: 4
 [WARNING]: Could not match supplied host pattern, ignoring: magnusdusltsmbp
 [WARNING]: Could not match supplied host pattern, ignoring: 4.100.168.192.in-
 addr.arpa
+[WARNING]: Could not match supplied host pattern, ignoring: 4
 localhost | CHANGED => {
-    "after": "50884c61f0176a08fede0346752e399dc7f128e5",
-    "before": "119041382e973cacd2f2ce42c77a9bb60148e95b",
+    "after": "a8ec743dc3166b7a443d4b2cbe5bda56ee6439d4",
+    "before": "50884c61f0176a08fede0346752e399dc7f128e5",
     "changed": true,
     "remote_url_changed": false
 }
 [WARNING]: No inventory was parsed, only implicit localhost is available
 [WARNING]: provided hosts list is empty, only localhost is available. Note that
 the implicit localhost does not match 'all'
-[WARNING]: Could not match supplied host pattern, ignoring: 4
 [WARNING]: Could not match supplied host pattern, ignoring: magnusdusltsmbp
 [WARNING]: Could not match supplied host pattern, ignoring: 4.100.168.192.in-
 addr.arpa
+[WARNING]: Could not match supplied host pattern, ignoring: 4
 
 PLAY [127.0.0.1] ***************************************************************
 
@@ -26,9 +26,110 @@ included: /var/root/.ansible/pull/4.100.168.192.in-addr.arpa/tasks/cron.yaml for
 TASK [install cronjob] *********************************************************
 ok: [localhost]
 
-TASK [After] *******************************************************************
-fatal: [localhost]: FAILED! => {"changed": true, "cmd": "docker ps", "delta": "0:00:00.006597", "end": "2023-01-20 04:02:04.723043", "msg": "non-zero return code", "rc": 127, "start": "2023-01-20 04:02:04.716446", "stderr": "/bin/sh: docker: command not found", "stderr_lines": ["/bin/sh: docker: command not found"], "stdout": "", "stdout_lines": []}
+TASK [Create and start services] ***********************************************
+fatal: [localhost]: FAILED! => {"changed": false, "errors": [], "module_stderr": "Creating apache_web ... \nCreating apache_web ... error\n", "module_stdout": "", "msg": "Error starting project Encountered errors while bringing up the project."}
 
 PLAY RECAP *********************************************************************
 localhost                  : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
 
+Starting Ansible Pull at 2023-01-20 04:10:00
+/opt/homebrew/bin/ansible-pull -o -U git@github.com:magnusducatuslt/ansible-pull.git -i hosts --key-file /Users/magnusducatuslt/.ssh/github --user magnusducatuslt
+[WARNING]: Could not match supplied host pattern, ignoring: 4.100.168.192.in-
+addr.arpa
+[WARNING]: Could not match supplied host pattern, ignoring: 4
+[WARNING]: Could not match supplied host pattern, ignoring: magnusdusltsmbp
+localhost | SUCCESS => {
+    "after": "a8ec743dc3166b7a443d4b2cbe5bda56ee6439d4",
+    "before": "a8ec743dc3166b7a443d4b2cbe5bda56ee6439d4",
+    "changed": false,
+    "remote_url_changed": false
+}
+Repository has not changed, quitting.
+Starting Ansible Pull at 2023-01-20 04:11:00
+/opt/homebrew/bin/ansible-pull -o -U git@github.com:magnusducatuslt/ansible-pull.git -i hosts --key-file /Users/magnusducatuslt/.ssh/github --user magnusducatuslt
+[WARNING]: Could not match supplied host pattern, ignoring: magnusdusltsmbp
+[WARNING]: Could not match supplied host pattern, ignoring: 4.100.168.192.in-
+addr.arpa
+[WARNING]: Could not match supplied host pattern, ignoring: 4
+localhost | SUCCESS => {
+    "after": "a8ec743dc3166b7a443d4b2cbe5bda56ee6439d4",
+    "before": "a8ec743dc3166b7a443d4b2cbe5bda56ee6439d4",
+    "changed": false,
+    "remote_url_changed": false
+}
+Repository has not changed, quitting.
+Starting Ansible Pull at 2023-01-20 04:12:01
+/opt/homebrew/bin/ansible-pull -o -U git@github.com:magnusducatuslt/ansible-pull.git -i hosts --key-file /Users/magnusducatuslt/.ssh/github --user magnusducatuslt
+[WARNING]: Could not match supplied host pattern, ignoring: magnusdusltsmbp
+[WARNING]: Could not match supplied host pattern, ignoring: 4.100.168.192.in-
+addr.arpa
+[WARNING]: Could not match supplied host pattern, ignoring: 4
+localhost | SUCCESS => {
+    "after": "a8ec743dc3166b7a443d4b2cbe5bda56ee6439d4",
+    "before": "a8ec743dc3166b7a443d4b2cbe5bda56ee6439d4",
+    "changed": false,
+    "remote_url_changed": false
+}
+Repository has not changed, quitting.
+Starting Ansible Pull at 2023-01-20 04:13:01
+/opt/homebrew/bin/ansible-pull -o -U git@github.com:magnusducatuslt/ansible-pull.git -i hosts --key-file /Users/magnusducatuslt/.ssh/github --user magnusducatuslt
+[WARNING]: Could not match supplied host pattern, ignoring: 4.100.168.192.in-
+addr.arpa
+[WARNING]: Could not match supplied host pattern, ignoring: 4
+[WARNING]: Could not match supplied host pattern, ignoring: magnusdusltsmbp
+localhost | SUCCESS => {
+    "after": "a8ec743dc3166b7a443d4b2cbe5bda56ee6439d4",
+    "before": "a8ec743dc3166b7a443d4b2cbe5bda56ee6439d4",
+    "changed": false,
+    "remote_url_changed": false
+}
+Repository has not changed, quitting.
+Starting Ansible Pull at 2023-01-20 04:14:01
+/opt/homebrew/bin/ansible-pull -o -U git@github.com:magnusducatuslt/ansible-pull.git -i hosts --key-file /Users/magnusducatuslt/.ssh/github --user magnusducatuslt
+[WARNING]: Could not match supplied host pattern, ignoring: 4
+[WARNING]: Could not match supplied host pattern, ignoring: 4.100.168.192.in-
+addr.arpa
+[WARNING]: Could not match supplied host pattern, ignoring: magnusdusltsmbp
+localhost | CHANGED => {
+    "after": "f6e7633b34da83451327c48603080654e51ee11a",
+    "before": "a8ec743dc3166b7a443d4b2cbe5bda56ee6439d4",
+    "changed": true,
+    "remote_url_changed": false
+}
+[WARNING]: No inventory was parsed, only implicit localhost is available
+[WARNING]: provided hosts list is empty, only localhost is available. Note that
+the implicit localhost does not match 'all'
+[WARNING]: Could not match supplied host pattern, ignoring: 4
+[WARNING]: Could not match supplied host pattern, ignoring: 4.100.168.192.in-
+addr.arpa
+[WARNING]: Could not match supplied host pattern, ignoring: magnusdusltsmbp
+
+PLAY [127.0.0.1] ***************************************************************
+
+TASK [include_tasks] ***********************************************************
+included: /var/root/.ansible/pull/4.100.168.192.in-addr.arpa/tasks/cron.yaml for localhost
+
+TASK [install cronjob] *********************************************************
+ok: [localhost]
+
+TASK [Create and start services] ***********************************************
+fatal: [localhost]: FAILED! => {"changed": false, "errors": [], "module_stderr": "Creating apache_web ... \nCreating apache_web ... error\n", "module_stdout": "", "msg": "Error starting project Encountered errors while bringing up the project."}
+
+PLAY RECAP *********************************************************************
+localhost                  : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+
+Starting Ansible Pull at 2023-01-20 04:15:00
+/opt/homebrew/bin/ansible-pull -o -U git@github.com:magnusducatuslt/ansible-pull.git -i hosts --key-file /Users/magnusducatuslt/.ssh/github --user magnusducatuslt
+[WARNING]: Could not match supplied host pattern, ignoring: 4.100.168.192.in-
+addr.arpa
+[WARNING]: Could not match supplied host pattern, ignoring: magnusdusltsmbp
+[WARNING]: Could not match supplied host pattern, ignoring: 4
+localhost | SUCCESS => {
+    "after": "f6e7633b34da83451327c48603080654e51ee11a",
+    "before": "f6e7633b34da83451327c48603080654e51ee11a",
+    "changed": false,
+    "remote_url_changed": false
+}
+Repository has not changed, quitting.
+Starting Ansible Pull at 2023-01-20 04:16:01
+/opt/homebrew/bin/ansible-pull -o -U git@github.com:magnusducatuslt/ansible-pull.git -i hosts --key-file /Users/magnusducatuslt/.ssh/github --user magnusducatuslt

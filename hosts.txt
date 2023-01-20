@@ -1,6 +1,2 @@
-[local]
-127.0.0.1
-
-[magnusducatuslts-
-MacBook-Pro.local]
+[localhost]
 127.0.0.1

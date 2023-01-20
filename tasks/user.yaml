@@ -2,7 +2,7 @@
   user:
     name: "{{cron_user}}"
     system: yes
-- name: Allow "{{cron_user}}" user to run any commands with sudo
+- name: Allow {{cron_user}} user to run any commands with sudo
   community.general.sudoers:
     name: ansible # The name of the sudoers rule. This will be used for the filename for the sudoers file managed by this rule.
     nopassword: true # Whether a password will be required to run the sudo’d command.

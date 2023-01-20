@@ -42,7 +42,6 @@
     #     var: logs2.stdout_lines
     - name: Create and start services
       docker_compose:
-        nocache: true
         project_src: "{{workdir}}" # Path to a directory containing a docker-compose.yml or docker-compose.yaml file.
         build: true # Use with state present to always build images prior to starting the application.
       register: output

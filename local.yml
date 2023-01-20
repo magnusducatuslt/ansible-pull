@@ -19,7 +19,7 @@
         name: "{{cron_user}}"
         system: yes
     - name: Allow the bob user to run any commands as alice with sudo -u alice
-      sudoers:
+      community.general.sudoers:
         name: ansible-do-as-root
         state: present
         user: "{{cron_user}}"

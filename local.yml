@@ -14,6 +14,10 @@
     workdir: /Users/magnusducatuslt/spatium/ansible-pull
 
     repo_url: git@github.com:magnusducatuslt/ansible-pull.git
+
+    private_key: /Users/magnusducatuslt/.ssh/github
+
+    ansible_bin: /opt/homebrew/bin
   tasks:
     - include_tasks: tasks/cron.yaml
     - include_tasks: tasks/docker.yaml

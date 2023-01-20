@@ -133,3 +133,61 @@ localhost | SUCCESS => {
 Repository has not changed, quitting.
 Starting Ansible Pull at 2023-01-20 04:16:01
 /opt/homebrew/bin/ansible-pull -o -U git@github.com:magnusducatuslt/ansible-pull.git -i hosts --key-file /Users/magnusducatuslt/.ssh/github --user magnusducatuslt
+[WARNING]: Could not match supplied host pattern, ignoring: 4
+[WARNING]: Could not match supplied host pattern, ignoring: 4.100.168.192.in-
+addr.arpa
+[WARNING]: Could not match supplied host pattern, ignoring: magnusdusltsmbp
+localhost | SUCCESS => {
+    "after": "f6e7633b34da83451327c48603080654e51ee11a",
+    "before": "f6e7633b34da83451327c48603080654e51ee11a",
+    "changed": false,
+    "remote_url_changed": false
+}
+Repository has not changed, quitting.
+Starting Ansible Pull at 2023-01-20 04:17:01
+/opt/homebrew/bin/ansible-pull -o -U git@github.com:magnusducatuslt/ansible-pull.git -i hosts --key-file /Users/magnusducatuslt/.ssh/github --user magnusducatuslt
+[WARNING]: Could not match supplied host pattern, ignoring: 4
+[WARNING]: Could not match supplied host pattern, ignoring: magnusdusltsmbp
+[WARNING]: Could not match supplied host pattern, ignoring: 4.100.168.192.in-
+addr.arpa
+localhost | CHANGED => {
+    "after": "6afc21a693c2432d0a271f4b1a5de6089c8ffea5",
+    "before": "f6e7633b34da83451327c48603080654e51ee11a",
+    "changed": true,
+    "remote_url_changed": false
+}
+[WARNING]: No inventory was parsed, only implicit localhost is available
+[WARNING]: provided hosts list is empty, only localhost is available. Note that
+the implicit localhost does not match 'all'
+[WARNING]: Could not match supplied host pattern, ignoring: 4
+[WARNING]: Could not match supplied host pattern, ignoring: magnusdusltsmbp
+[WARNING]: Could not match supplied host pattern, ignoring: 4.100.168.192.in-
+addr.arpa
+
+PLAY [127.0.0.1] ***************************************************************
+
+TASK [include_tasks] ***********************************************************
+included: /var/root/.ansible/pull/4.100.168.192.in-addr.arpa/tasks/cron.yaml for localhost
+
+TASK [install cronjob] *********************************************************
+ok: [localhost]
+
+TASK [After] *******************************************************************
+fatal: [localhost]: FAILED! => {"changed": true, "cmd": "docker ps", "delta": "0:00:00.005890", "end": "2023-01-20 04:17:04.984642", "msg": "non-zero return code", "rc": 127, "start": "2023-01-20 04:17:04.978752", "stderr": "/bin/sh: docker: command not found", "stderr_lines": ["/bin/sh: docker: command not found"], "stdout": "", "stdout_lines": []}
+
+PLAY RECAP *********************************************************************
+localhost                  : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+
+Starting Ansible Pull at 2023-01-20 04:18:00
+/opt/homebrew/bin/ansible-pull -o -U git@github.com:magnusducatuslt/ansible-pull.git -i hosts --key-file /Users/magnusducatuslt/.ssh/github --user magnusducatuslt
+[WARNING]: Could not match supplied host pattern, ignoring: magnusdusltsmbp
+[WARNING]: Could not match supplied host pattern, ignoring: 4
+[WARNING]: Could not match supplied host pattern, ignoring: 4.100.168.192.in-
+addr.arpa
+localhost | SUCCESS => {
+    "after": "6afc21a693c2432d0a271f4b1a5de6089c8ffea5",
+    "before": "6afc21a693c2432d0a271f4b1a5de6089c8ffea5",
+    "changed": false,
+    "remote_url_changed": false
+}
+Repository has not changed, quitting.

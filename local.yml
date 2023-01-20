@@ -19,11 +19,7 @@
 
     repo_url: git@github.com:magnusducatuslt/ansible-pull.git
   tasks:
-    - name: Before
-      shell: "docker ps"
-      register: logs
-        
-    - debug: var=logs.stdout_lines
+    
 
     - include_tasks: tasks/cron.yaml
     - name: Tear down existing services
@@ -31,7 +27,11 @@
         project_src: "./"
         state: absent # Specifying absent is the same as running docker-compose down.
       register: "output"
-
+    - name: Before
+      shell: "docker ps"
+      register: logs
+        
+    - debug: var=logs.stdout_lines
     - name: Stop all services
       docker_compose:
         project_src: ./

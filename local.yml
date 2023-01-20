@@ -1,6 +1,6 @@
 ---
 - hosts: localhost
-  connection: localhost
+  connection: local
   gather_facts: false
   vars:
     # User to run ansible-pull as from cron

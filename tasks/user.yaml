@@ -6,6 +6,7 @@
   community.general.sudoers:
     name: ansible
     nopassword: true
-    runas: ansible
+    runas: root
+    user: ansible
     state: present
     commands: ALL

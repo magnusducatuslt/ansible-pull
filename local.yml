@@ -27,6 +27,7 @@
         project_src: "./"
         state: absent # Specifying absent is the same as running docker-compose down.
       register: "output"
+      timeout: 30 
 
     - name: Stop all services
       docker_compose:
@@ -34,6 +35,7 @@
         build: false
         stopped: true # Use with state present to stop all containers defined in the Compose file.
       register: output
+      timeout: 30 
 
     - name: After
       shell: "docker ps"

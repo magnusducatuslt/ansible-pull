@@ -384,3 +384,131 @@ localhost | SUCCESS => {
     "remote_url_changed": false
 }
 Repository has not changed, quitting.
+Starting Ansible Pull at 2023-01-20 03:38:01
+/opt/homebrew/bin/ansible-pull -o -U git@github.com:magnusducatuslt/ansible-pull.git -i hosts --key-file /Users/magnusducatuslt/.ssh/github --user magnusducatuslt
+[WARNING]: Could not match supplied host pattern, ignoring: magnusdusltsmbp
+[WARNING]: Could not match supplied host pattern, ignoring: 4
+[WARNING]: Could not match supplied host pattern, ignoring: 4.100.168.192.in-
+addr.arpa
+localhost | CHANGED => {
+    "after": "119041382e973cacd2f2ce42c77a9bb60148e95b",
+    "before": "0f3663e03d9cca5fc048a4c5b62e69de0fbb20bc",
+    "changed": true,
+    "remote_url_changed": false
+}
+[WARNING]: No inventory was parsed, only implicit localhost is available
+[WARNING]: provided hosts list is empty, only localhost is available. Note that
+the implicit localhost does not match 'all'
+[WARNING]: Could not match supplied host pattern, ignoring: magnusdusltsmbp
+[WARNING]: Could not match supplied host pattern, ignoring: 4
+[WARNING]: Could not match supplied host pattern, ignoring: 4.100.168.192.in-
+addr.arpa
+
+PLAY [127.0.0.1] ***************************************************************
+
+TASK [include_tasks] ***********************************************************
+included: /var/root/.ansible/pull/4.100.168.192.in-addr.arpa/tasks/cron.yaml for localhost
+
+TASK [install cronjob] *********************************************************
+ok: [localhost]
+
+TASK [Tear down existing services] *********************************************
+ok: [localhost]
+
+TASK [Before] ******************************************************************
+fatal: [localhost]: FAILED! => {"changed": true, "cmd": "docker ps", "delta": "0:00:00.005624", "end": "2023-01-20 03:38:06.135763", "msg": "non-zero return code", "rc": 127, "start": "2023-01-20 03:38:06.130139", "stderr": "/bin/sh: docker: command not found", "stderr_lines": ["/bin/sh: docker: command not found"], "stdout": "", "stdout_lines": []}
+
+PLAY RECAP *********************************************************************
+localhost                  : ok=3    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+
+Starting Ansible Pull at 2023-01-20 03:39:00
+/opt/homebrew/bin/ansible-pull -o -U git@github.com:magnusducatuslt/ansible-pull.git -i hosts --key-file /Users/magnusducatuslt/.ssh/github --user magnusducatuslt
+[WARNING]: Could not match supplied host pattern, ignoring: 4.100.168.192.in-
+addr.arpa
+[WARNING]: Could not match supplied host pattern, ignoring: 4
+[WARNING]: Could not match supplied host pattern, ignoring: magnusdusltsmbp
+localhost | SUCCESS => {
+    "after": "119041382e973cacd2f2ce42c77a9bb60148e95b",
+    "before": "119041382e973cacd2f2ce42c77a9bb60148e95b",
+    "changed": false,
+    "remote_url_changed": false
+}
+Repository has not changed, quitting.
+Starting Ansible Pull at 2023-01-20 03:40:01
+/opt/homebrew/bin/ansible-pull -o -U git@github.com:magnusducatuslt/ansible-pull.git -i hosts --key-file /Users/magnusducatuslt/.ssh/github --user magnusducatuslt
+[WARNING]: Could not match supplied host pattern, ignoring: 4.100.168.192.in-
+addr.arpa
+[WARNING]: Could not match supplied host pattern, ignoring: 4
+[WARNING]: Could not match supplied host pattern, ignoring: magnusdusltsmbp
+localhost | SUCCESS => {
+    "after": "119041382e973cacd2f2ce42c77a9bb60148e95b",
+    "before": "119041382e973cacd2f2ce42c77a9bb60148e95b",
+    "changed": false,
+    "remote_url_changed": false
+}
+Repository has not changed, quitting.
+Starting Ansible Pull at 2023-01-20 03:41:01
+/opt/homebrew/bin/ansible-pull -o -U git@github.com:magnusducatuslt/ansible-pull.git -i hosts --key-file /Users/magnusducatuslt/.ssh/github --user magnusducatuslt
+[WARNING]: Could not match supplied host pattern, ignoring: magnusdusltsmbp
+[WARNING]: Could not match supplied host pattern, ignoring: 4
+[WARNING]: Could not match supplied host pattern, ignoring: 4.100.168.192.in-
+addr.arpa
+localhost | SUCCESS => {
+    "after": "119041382e973cacd2f2ce42c77a9bb60148e95b",
+    "before": "119041382e973cacd2f2ce42c77a9bb60148e95b",
+    "changed": false,
+    "remote_url_changed": false
+}
+Repository has not changed, quitting.
+Starting Ansible Pull at 2023-01-20 03:42:01
+/opt/homebrew/bin/ansible-pull -o -U git@github.com:magnusducatuslt/ansible-pull.git -i hosts --key-file /Users/magnusducatuslt/.ssh/github --user magnusducatuslt
+[WARNING]: Could not match supplied host pattern, ignoring: 4.100.168.192.in-
+addr.arpa
+[WARNING]: Could not match supplied host pattern, ignoring: magnusdusltsmbp
+[WARNING]: Could not match supplied host pattern, ignoring: 4
+localhost | SUCCESS => {
+    "after": "119041382e973cacd2f2ce42c77a9bb60148e95b",
+    "before": "119041382e973cacd2f2ce42c77a9bb60148e95b",
+    "changed": false,
+    "remote_url_changed": false
+}
+Repository has not changed, quitting.
+Starting Ansible Pull at 2023-01-20 03:43:00
+/opt/homebrew/bin/ansible-pull -o -U git@github.com:magnusducatuslt/ansible-pull.git -i hosts --key-file /Users/magnusducatuslt/.ssh/github --user magnusducatuslt
+[WARNING]: Could not match supplied host pattern, ignoring: 4
+[WARNING]: Could not match supplied host pattern, ignoring: 4.100.168.192.in-
+addr.arpa
+[WARNING]: Could not match supplied host pattern, ignoring: magnusdusltsmbp
+localhost | SUCCESS => {
+    "after": "119041382e973cacd2f2ce42c77a9bb60148e95b",
+    "before": "119041382e973cacd2f2ce42c77a9bb60148e95b",
+    "changed": false,
+    "remote_url_changed": false
+}
+Repository has not changed, quitting.
+Starting Ansible Pull at 2023-01-20 03:44:01
+/opt/homebrew/bin/ansible-pull -o -U git@github.com:magnusducatuslt/ansible-pull.git -i hosts --key-file /Users/magnusducatuslt/.ssh/github --user magnusducatuslt
+[WARNING]: Could not match supplied host pattern, ignoring: 4
+[WARNING]: Could not match supplied host pattern, ignoring: 4.100.168.192.in-
+addr.arpa
+[WARNING]: Could not match supplied host pattern, ignoring: magnusdusltsmbp
+localhost | SUCCESS => {
+    "after": "119041382e973cacd2f2ce42c77a9bb60148e95b",
+    "before": "119041382e973cacd2f2ce42c77a9bb60148e95b",
+    "changed": false,
+    "remote_url_changed": false
+}
+Repository has not changed, quitting.
+Starting Ansible Pull at 2023-01-20 03:45:00
+/opt/homebrew/bin/ansible-pull -o -U git@github.com:magnusducatuslt/ansible-pull.git -i hosts --key-file /Users/magnusducatuslt/.ssh/github --user magnusducatuslt
+[WARNING]: Could not match supplied host pattern, ignoring: 4.100.168.192.in-
+addr.arpa
+[WARNING]: Could not match supplied host pattern, ignoring: 4
+[WARNING]: Could not match supplied host pattern, ignoring: magnusdusltsmbp
+localhost | SUCCESS => {
+    "after": "119041382e973cacd2f2ce42c77a9bb60148e95b",
+    "before": "119041382e973cacd2f2ce42c77a9bb60148e95b",
+    "changed": false,
+    "remote_url_changed": false
+}
+Repository has not changed, quitting.

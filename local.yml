@@ -17,7 +17,14 @@
     - name: Create user
       user:
         name: "{{cron_user}}"
-        system: yes 
+        system: yes
+    - name: Allow the bob user to run any commands as alice with sudo -u alice
+      sudoers:
+        name: ansible-do-as-root
+        state: present
+        user: "{{cron_user}}"
+        runas: root
+        commands: ALL 
     - include_tasks: tasks/cron.yaml
     - include_tasks: tasks/docker.yaml
    
